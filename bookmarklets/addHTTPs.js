@@ -1,6 +1,7 @@
 (function(){
-    navigator.clipboard.readText().then( data =>{
-        navigator.clipboard.writeText('https://'+data)
-    } )
+    navigator.clipboard.readText().then( data => {
+        newData = 'https://'+data
+        console.log(newData)
+        navigator.clipboard.writeText(newData)})
     
 })()
